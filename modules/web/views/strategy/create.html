@@ -63,6 +63,7 @@
 
           <div class='form-group' style="">
             <label for='TargetNeedToMonitor'>告警设置(Alarm Stra)</label>
+            <br>
             <table>
             <thead>
             <tr>
@@ -115,6 +116,13 @@ Cookie:adfaldsfjaldjfalj
           <div class='form-group'>
             <label for='TargetNeedToMonitor'>tags</label>
             <textarea type="text" class="form-control " id="tags" value="" placeholder="向falcon推送数据时使用, 形式为 a=b 每行一个"/></textarea>
+          </div>
+
+          <div class='form-group'>
+            <label for='TargetNeedToMonitor'>钉钉Webhook</label>
+            <div class='controls'>
+              <input class='form-control' type='text' placeholder='自定义发往钉钉群的Webhook' id='ding_webhook'> </input>
+            </div>
           </div>
 
         </div>
