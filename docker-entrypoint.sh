@@ -1,6 +1,11 @@
 #!/bin/bash
 
 # start mysql
+if [[ -f "/var/run/mysqld/mysqld.sock.lock" ]]; then
+    echo ">> rm mysqld.sock.lock"
+    rm -rf "/var/run/mysqld/mysqld.sock.lock"
+fi
+
 mysqld_safe &
 sleep 5s
 
